@@ -1,0 +1,109 @@
+
+.descuentos {
+
+  
+  font-size: 16px ;
+}
+
+.precios {
+
+  font-size: 18px;
+}
+
+.titulares {
+
+
+  font-size: 24px;
+
+}
+
+.cuerpo {
+
+
+  font-size: 12px;
+}
+
+
+.descripcion {
+
+  font-size: 16px;
+}
+
+body{ 
+
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+
+.iconfooter {
+
+  color:#1259c3;
+  font-size: 32px;
+  margin-bottom: 10px;
+
+  
+}
+
+
+header {
+
+  background-color: #EAC926;
+
+  
+}
+
+.footer{
+
+  text-align: center;
+  
+  
+}
+
+.burger-menu{
+
+  background-color: #1259c3;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: fit-content;
+  margin: 0 auto;
+  
+  
+  
+}
+
+#search-bar{
+
+  position: relative;
+  margin: 8px;
+  bottom: 10%;
+  top: 10%;
+  width: 50%;
+}
+
+#imagen-logo{
+
+  margin: 8px;
+  width: 50%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+#button-search{
+
+  position: absolute;
+  margin: 8px;
+  top: 15%;
+  
+  
+ 
+}
