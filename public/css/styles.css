@@ -19,8 +19,9 @@
 
 .titulares {
 
-
   font-size: 24px;
+  margin: 20px;
+  color: #666666;
 
 }
 
@@ -184,7 +185,7 @@ main article div {
     padding: 15px;
   }
 
-  ul#menu li a {
+  ul#nav-bar li a {
     text-decoration: inherit;
     color: inherit;
   }
