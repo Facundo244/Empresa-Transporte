@@ -46,6 +46,7 @@ body{
   color: black;
   background-color: #ececec;
   font-size: 12px;
+
 }
   
 
@@ -125,9 +126,29 @@ nav {
  
 }
 
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.productos article{
+
+  width: 90%;
+}
+
+main section h2 {
+
+  margin: 20px 0px;
+}
+
 main section article {
   text-align: center;
   margin: 10px 0px;
+  background-color: #fff;    
+  
 
 }
 
@@ -153,11 +174,22 @@ section.banner img {
 
 
 main article div i {
-  font-size: 15px;
-  color: #40b54b;
-  padding: 5px;
-  border: #40b54b 1px solid;
-  border-radius: 100%;
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left:87%;
+    top: -30px;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
 }
 
 main article div {
@@ -165,6 +197,10 @@ main article div {
   background-color: white;
   border-top: #ebebeb 1px solid;
   padding: 15px;
+}
+
+main section article{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 
@@ -232,3 +268,24 @@ section.footer p {
   margin: 0px;
   line-height: 19px;
 }
+
+
+@media (min-width: 468px){
+
+  .descuentos {
+      font-size: 22px;
+  }
+
+  .productos{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }    
+
+  .productos article {
+      width: 44%;
+  }
+
+}
+
+
