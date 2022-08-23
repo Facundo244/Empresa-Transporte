@@ -6,14 +6,34 @@ const app = express();
 app.use(express.static("public"));
 
 
-app.listen(3030, () =>{ 
+app.listen( 3030 , ()=>{
+  console.log('Servidor levantado!!');
+});
 
-    console.log("Servidor levantado y corriendo , andando ....")
+
+app.get('/', (req,res)=>{
+
+  res.sendFile(path.join(__dirname,'./views/home.html'));
 
 });
 
-app.get("/", (req,res)=>{
 
-    res.sendFile(path.join(__dirname, "/views/home.html"))
+app.post('/', (req,res)=>{
+
+  
+  res.sendFile(path.join(__dirname,'./views/home.html'));
 
 });
+
+app.get('/registro', (req,res)=>{
+
+  res.sendFile(path.join(__dirname,'./views/register.html'));
+
+});
+
+app.get('/login', (req,res)=>{
+
+  res.sendFile(path.join(__dirname,'./views/login.html'));
+
+});
+
