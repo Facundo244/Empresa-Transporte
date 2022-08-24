@@ -266,6 +266,9 @@ section.footer p {
 
 }
 
+
+
+
 @media (min-width: 361px) {
   .description {
       display: block;
@@ -352,21 +355,30 @@ section.footer p {
 
 }
 
+.contenido-centrado {
+  justify-content: center;
+}
+
+
+
 
 .titulo{
 
   text-align: center;
 
 }
-.formu{
+.formulario{
 
   margin-top: 10px;
 
 
 }
+
+/* formulario registro */
+
 .container-form-registro{
 
-  background-color: #d9d9d9;
+  background-color: white;
   padding: 28px;
   width: 50%;
   margin: 0 auto;
@@ -395,3 +407,59 @@ section.footer p {
   background-color: #2366ec;
   
 }
+
+.ingreso-ancho-full {
+  flex-basis: 80%;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+#nombreUsuario, #username, #Email, #fecha , #domicilio, #password, #password2{
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  height: 20px;
+}
+
+
+/* formulario login */
+
+.container-form-login{
+
+  background-color: white;
+  padding: 28px;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  
+
+}
+.container-form-login div{
+
+  margin-top: 20px;   
+}
+
+.boton-login{
+
+  position: relative;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  background-color: #1259c3;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  left: 200px;
+}
+
+.boton-login:hover{
+
+  background-color: #2366ec;
+  
+}
+
+
+
