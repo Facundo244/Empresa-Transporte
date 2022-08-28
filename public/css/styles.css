@@ -38,7 +38,13 @@
 .descripcion {
 
   font-size: 16px;
+  visibility: hidden;
+  margin-top: 20px;
+  transition: all 0s;
+  
 }
+
+
 
 body{ 
 
@@ -147,13 +153,6 @@ main section h2 {
   margin: 20px 0px;
 }
 
-main section article {
-  text-align: center;
-  margin: 10px 0px;
-  background-color: #fff;    
-  
-
-}
 
 main {
 
@@ -193,12 +192,20 @@ main article div i {
     position: relative;
     left:87%;
     top: -30px;
+    transition: transform 400ms;
+}
+
+main article div i:hover {
+
+  transform: rotateZ(-90deg);
 }
 
 main section article i,
 .discount{
     color: #39b54a;
 }
+
+
 
 main article div {
   text-align: left;
@@ -208,11 +215,25 @@ main article div {
 }
 
 main section article{
-  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
   column-gap:normal;
   background-color: #fff;    
-   margin: 10px 0px;
+  margin: 10px 0px;
+  
 }
+
+main section article:hover {
+
+  box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+article:hover .descripcion{
+
+  visibility: visible;
+}
+
+
+
 
 
 .detalle-productos {
@@ -231,15 +252,26 @@ main section article{
 }
 
 
+
+
+
 section.footer i {
 
   display: flex;
   justify-content: center;
   color: #104aa2;
-  font-size: 30px;
-  margin: 12px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  transition: color 100ms;
+  
 
 }
+
+section.footer i:hover {
+
+  color: #0022AA;
+}
+
 
 
 section.footer h3 {
@@ -269,10 +301,99 @@ section.footer p {
 
 
 
+.container-form-registro{
+
+  background-color: white;
+  padding: 28px;
+  width: 50%;
+  margin: 0 auto;
+  
+
+}
+.container-form-registro div{
+
+  margin-top: 20px;   
+}
+
+.boton-registro{
+
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  background-color: #1259c3;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+.boton-registro:hover{
+
+  background-color: #0022AA;
+  
+}
+
+.ingreso-ancho-full {
+  flex-basis: 80%;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+#nombreUsuario, #username, #Email, #fecha , #domicilio, #password, #password2{
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  height: 20px;
+}
+
+
+/* formulario login */
+
+.container-form-login{
+
+  background-color: white;
+  padding: 28px;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+
+
+}
+.container-form-login div{
+
+  margin-top: 20px;   
+}
+
+.boton-login{
+
+  position: relative;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  background-color: #1259c3;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  left: 200px;
+}
+
+.boton-login:hover{
+
+  background-color: #0022AA;
+
+}
+
+
+
+
+
+
+
 @media (min-width: 361px) {
-  .description {
-      display: block;
-  }
+  
 
 }
 
@@ -306,12 +427,12 @@ section.footer p {
       width: 30%;
   }
 
-  .top-header{
-    display : flex ;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap:wrap;
-}
+    .top-header{
+      display : flex ;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap:wrap;
+  }
   .header-bottom-bar{
     display : flex ;
     align-items: center;
@@ -319,15 +440,15 @@ section.footer p {
  
   }
   .header-bottom-bar ul li{
-    margin: 0 15px;
-}
+      margin: 0 15px;
+  }
 
-.lista-1, .lista-2{
-        
-  display: flex;
-  justify-content: space-between;
+  .lista-1, .lista-2{
+          
+    display: flex;
+    justify-content: space-between;
 
-}
+  }
 
 
   .productos article {
@@ -353,113 +474,53 @@ section.footer p {
   }
 
 
-}
 
-.contenido-centrado {
-  justify-content: center;
-}
-
+  .contenido-centrado {
+    justify-content: center;
+  }
 
 
+  .titulo{
 
-.titulo{
+    text-align: center;
 
-  text-align: center;
+  }
+  .formulario{
 
-}
-.formulario{
-
-  margin-top: 10px;
+    margin-top: 10px;
 
 
-}
+  }
 
-/* formulario registro */
 
-.container-form-registro{
+  .footer-home {
 
-  background-color: white;
-  padding: 28px;
-  width: 50%;
-  margin: 0 auto;
-  
+    padding-top: 40px;
+  }
 
-}
-.container-form-registro div{
+  .footer-home article{
 
-  margin-top: 20px;   
-}
+    width: 30%;
+  }
 
-.boton-registro{
+  .footer {
 
-  width: 100px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ebebeb;
-  background-color: #1259c3;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-}
-.boton-registro:hover{
+  .footer-home h3{
 
-  background-color: #2366ec;
+    font-size: 19px;
+  }
+
+  .footer-home p {
+
+    font-size: 14px;
+  }
+
+
   
 }
-
-.ingreso-ancho-full {
-  flex-basis: 80%;
-  flex-grow: 1;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
-#nombreUsuario, #username, #Email, #fecha , #domicilio, #password, #password2{
-  width: 50%;
-  border: none;
-  border-radius: 5px;
-  height: 20px;
-}
-
-
-/* formulario login */
-
-.container-form-login{
-
-  background-color: white;
-  padding: 28px;
-  width: 50%;
-  margin: 0 auto;
-  justify-content: center;
-  
-
-}
-.container-form-login div{
-
-  margin-top: 20px;   
-}
-
-.boton-login{
-
-  position: relative;
-  width: 50%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ebebeb;
-  background-color: #1259c3;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  left: 200px;
-}
-
-.boton-login:hover{
-
-  background-color: #2366ec;
-  
-}
-
-
-
