@@ -6,9 +6,11 @@ const app = express();
 app.use(express.static("public"));
 
 
-app.listen( 3030 , ()=>{
-  console.log('Servidor levantado!!');
-});
+app.listen(process.env.PORT || 3030, function(){
+
+  console.log("Puerto funcionando en el 3030!")
+  
+})
 
 
 app.get('/', (req,res)=>{
@@ -38,6 +40,9 @@ app.get('/login', (req,res)=>{
   res.sendFile(path.join(__dirname,'./views/login.html'));
 
 });
+
+
+
 
 
 
