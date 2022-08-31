@@ -100,7 +100,7 @@ div#search {
   font-size: 15px;
   background-color: white;
   border-radius: 5%;
-  padding: 10px;
+  padding: 0px;
   color: #666666;
 }
 
@@ -386,9 +386,22 @@ section.footer p {
 
 }
 
+.busqueda-bar {
+  display: block;
+  margin: auto;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+  height: 39px;
+  padding: 0 0 0 15px;
+  border-radius: 2px;
+  border: none;
+  position: relative;
+}
 
 
-
+.busqueda-icon {
+  display: none;
+}
 
 
 
@@ -423,16 +436,17 @@ section.footer p {
   }
 
   
-  .logo, .form, .cuotas {
-      width: 30%;
+  #imagen-logo, .form, .cuotas {
+      width: 20%;
   }
 
-    .top-header{
-      display : flex ;
+  .top-header{
+      display:flex ;
       justify-content: space-between;
       align-items: center;
       flex-wrap:wrap;
   }
+
   .header-bottom-bar{
     display : flex ;
     align-items: center;
@@ -447,6 +461,7 @@ section.footer p {
           
     display: flex;
     justify-content: space-between;
+    font-size: 17px;
 
   }
 
@@ -469,9 +484,11 @@ section.footer p {
       display: flex;
       justify-content: space-around;
       width: 45%;
-      font-size: 17px;
+      font-size: 10px;
 
   }
+
+
 
 
 
@@ -520,6 +537,24 @@ section.footer p {
 
     font-size: 14px;
   }
+
+  .busqueda-bar {
+    display: block;
+    margin: auto;
+    width: 55%;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    height: 39px;
+    padding: 0 0 0 15px;
+    border-radius: 2px;
+    border: none;
+    position: relative;
+}
+
+.busqueda-icon {
+   display: flex;
+   position: relative;
+   right: 70px;
+}
 
 
   
