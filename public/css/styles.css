@@ -340,6 +340,10 @@ section.footer p {
   flex-wrap: wrap;
 }
 
+header form{
+
+  width: 80%;
+}
 
 #nombreUsuario, #username, #Email, #fecha , #domicilio, #password, #password2{
   width: 50%;
@@ -488,6 +492,10 @@ section.footer p {
 
   }
 
+  header form{
+
+    width: 50%;
+  }
 
 
 
@@ -553,7 +561,8 @@ section.footer p {
 .busqueda-icon {
    display: flex;
    position: relative;
-   right: 70px;
+   left: 70%;
+   bottom: 30px;
 }
 
 
