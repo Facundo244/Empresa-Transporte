@@ -69,7 +69,7 @@ header {
 
 .home {
 
-  text-align: center;
+  
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -93,6 +93,18 @@ header {
 
 }
 
+.formulario{
+
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  width: 111%;
+  
+
+
+}
 
 
 div#search {
@@ -133,6 +145,11 @@ nav {
   
   
  
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
 }
 
 
@@ -178,6 +195,34 @@ section.banner img {
   margin: 0px;
   width: 100%;
 }
+
+.header-form {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-basis: 34%;
+  flex-grow: 1;
+  width: 100%;
+  background-color: white;
+  border-style: none;
+  border-radius: 1em;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 30px;
+}
+
+header form button {
+  background-color: rgba(255,255,255,0);
+  border-style: none;
+  margin-right: 0.5em;
+}
+
+.lista-1 , .lista-2{
+
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
 
 
 main article div i {
@@ -269,7 +314,7 @@ section.footer i {
 
 section.footer i:hover {
 
-  color: #0022AA;
+  color: #EAC926;
 }
 
 
@@ -303,16 +348,20 @@ section.footer p {
 
 .container-form-registro{
 
-  background-color: white;
-  padding: 28px;
-  width: 50%;
-  margin: 0 auto;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  
+}
   
 
-}
+
 .container-form-registro div{
 
   margin-top: 20px;   
+  
 }
 
 .boton-registro{
@@ -333,6 +382,9 @@ section.footer p {
   
 }
 
+
+
+
 .ingreso-ancho-full {
   flex-basis: 80%;
   flex-grow: 1;
@@ -346,10 +398,27 @@ header form{
 }
 
 #nombreUsuario, #username, #Email, #fecha , #domicilio, #password, #password2{
-  width: 50%;
+  width: 100%;
   border: none;
   border-radius: 5px;
   height: 20px;
+  border: solid #000;
+  border-width: 1px;
+}
+
+
+#username-login , #password-login {
+
+  margin: 20px;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  border: solid #000;
+  border-width: 1px;
 }
 
 
@@ -362,6 +431,7 @@ header form{
   width: 50%;
   margin: 0 auto;
   justify-content: center;
+  
 
 
 }
@@ -372,16 +442,22 @@ header form{
 
 .boton-login{
 
-  position: relative;
-  width: 50%;
-  padding: 10px;
+  
+  
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
   border-radius: 5px;
   border: 1px solid #ebebeb;
   background-color: #1259c3;
   color: white;
   font-size: 16px;
   cursor: pointer;
-  left: 200px;
+  
+  
 }
 
 .boton-login:hover{
@@ -402,10 +478,18 @@ header form{
   position: relative;
 }
 
+header form input {
+  min-width: 0;
+  width: 1%;
+  flex: 1 1 auto;
+  background-color: rgba(255,255,255,0);
+  border-style: none;
+}
 
 .busqueda-icon {
   display: none;
 }
+
 
 
 
@@ -434,6 +518,8 @@ header form{
 }
 
 @media (min-width: 769px){
+  
+  
 
   .cuotas {
       font-size: 18px;
@@ -455,6 +541,7 @@ header form{
     display : flex ;
     align-items: center;
     justify-content: space-between;
+    list-style-type: none;
  
   }
   .header-bottom-bar ul li{
@@ -465,9 +552,14 @@ header form{
           
     display: flex;
     justify-content: space-between;
-    font-size: 17px;
+    font-size: 1.3em;
+    
+    
 
   }
+
+ 
+  
 
 
   .productos article {
@@ -507,12 +599,21 @@ header form{
 
   .titulo{
 
-    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 111%;
+
 
   }
   .formulario{
 
     margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    width: 111%;
+    
 
 
   }
