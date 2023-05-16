@@ -1,209 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head class="header">
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mercado Libre</title>
+        <title>Empresa Transporte Saavedra</title>
         <link rel="stylesheet" href="/css/styles.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" >   
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body> 
+
         <header>
-            
-            <div class="top-header">
-                <div id="imagen-logo">
-                    <img src="/images/logo-mercado-liebre.svg"  alt="Logo mercado libre" >
-                </div>  
-            <form class="header-form" action="#" method="GET">
-                    <input type="text" name="busqueda-bar" placeholder="Buscar...">
-                    <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-            
-            <div id="comprar">
-                     <i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de credito</p>
-                </div>   
+            <div id="imagen-logo">
+                
+                <img class="logo" src ="/images/LOGO_EMPRESA_3.png" alt="Logo Empresa">
+
+                
+
             </div>
 
-                   
+            <div>
+                <h2 class="titulo">Transporte Saavedra</h2>
             </div>
-        <nav class="header-bottom-bar">
-            <ul class="lista-1">
-                <li><a href="">Ofertas</a></li>
-                <li><a href="">Tiendas Oficiales</a></li>
-                <li><a href="">Vender</a></li>
-                <li><a href="">Ayuda</a></li>
-            </ul>
-            <ul class="lista-2">
-                <li><a href="/registro">Crea tu cuenta <i class="far fa-address-card"></i></a></li>
-                <li><a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
-        
-        </nav>
+
+            <div>
+
+                <h5 class="subtitulo">transporte de carga generales</h5>
+            </div>
 
             <div class ="burger-menu">
                 <i class="fas fa-bars"></i>
             </div>
+
+            <nav class="header-bottom-bar">
+                
+                <ul class="lista-1">
+
+                    <li>Quienes somos?</a></li>
+                    <li>Galeria</a></li>
+                    <li>Contacto</a></li>
+                
+                </ul>
+            
+            </nav>
+            
         </header> 
-            <section class="banner">
+           
+        <main > 
 
-                <img
-                  id="banner"
-                  src="/images/img-home-banner.jpg"
-                  alt="banner de ofertas"
+            <div>   
+                <h1 class="quienes-somos">¿Quienes Somos?</h1>
+            </div>
+
+            <div>
+
+                <h3 class="texto-quienes-somos">Somos una empresa de transporte de cargas familiar, con más de 28 años de 
+                    experiencia en el rubro.
+                    
+                    Nos especializamos en transporte de cargas generales y de grandes dimensiones, y 
+                    contamos con una flota de vehículos modernos y equipados para asegurar la protección 
+                    de su carga en todo momento. Además, ofrecemos servicios de logística para ayudar a 
+                    nuestros clientes a gestionar sus operaciones de manera eficiente.
+                    
+                    Nos esforzamos por brindar un servicio de calidad a todos nuestros clientes, tanto 
+                    grandes empresas como pequeños emprendedores.</h3>
+
+            </div>
+
+            <div class="carrusel-celular">
+
+                <img class="elemento"
+                    id="image-doble-camion"
+                    src="/images/doble-camion.jpg"
+                 alt="foto camion"
                 />
-            </section>
+                <img class="elemento"
+                    id="image-doble-camion"
+                    src="/images/camion-solo-1.jpg"
+                 alt="foto camion"
+                />
+                <img class="elemento"
+                    id="image-doble-camion"
+                    src="/images/camion-solo-2.jpg"
+                 alt="foto camion"
+                />
+                
+
+
+            </div>
+
+
+
+            <div>   
+                <h1 class="contacto">Contacto</h1>
+            </div>
+
+            <form action="/" method="post" class="formulario">
+                <div class="container-form">
+
+                   <div>
+               
+                       <input type="text" id="blanco-1" name="blanco-1" placeholder="Nombre Completo" minlength="5" required>  
+
+                   </div>
+
+                   <div>
+               
+
+                        <input type="text" id="blanco-2" name="blanco-2" placeholder="Apellido" minlength="11" required>
+
+                   </div>
+
+                   <div>
+               
+
+                        <input type="text" id="blanco-2" name="blanco-3" placeholder="DNI" minlength="11" required>
+
+                   </div>
+
+                    <div>
+               
+
+                        <input type="text" id="blanco-2" name="blanco-4" placeholder="Provincia" minlength="11" required>
+
+                    </div>
+
+                   <div>
+
+                        <textarea name="comentarios" id="comentarios" rows="10" cols="40" ></textarea>
+
+                   </div>
+
+                   <div class="botones-login">
+               
+                       <button type="submit"  class="boton-login">Enviar </button>
+
+                       
+                   </div>
+
+            </div>
+
+            <h1 class="llamanos">O llamanos...</h1>
+
+
+            <div id="footer-informacion" class="footer-column">
+                
+                <div><i class="fab fa-whatsapp"> </i></div>
+        
+                <h3 class="footer-h3"> +54 1138209057 </h3>
+        
+                <div><i class="fab fa-instagram"></i></div>
+        
+                <h3 class="footer-h3"> @transpsaavedra </h3>
+    
+        
+                <div><i class="fas fa-envelope"></i></div>
+        
+                <h3 class="footer-h3"> transaav@live.com </h3>
+        
+        
+        
+            </div>
               
-        <main class="home"> 
-            <section>
-                <h2 class="titulares">Basado en tu última visita</h2>
-                <div class="productos">
-                    <article>
-                        <img src="./images/img-cafetera-moulinex.jpg"  alt="cafetera">
-                        <div>
-                            <i class="fas fa-truck"></i>
-                            <div class="detalle-productos">
-                                <p class="precios">$6.770</p>
-                                <p class="descuentos">40% OFF</p>
-                            </div>
-                                <h5 class="descripcion">Cafetera Moulinex</h5></li>
-                        </div>    
-                    </article>
-                    <article>
-                        <img src="./images/img-macbook-pro-2019.jpg"alt="cafetera">
-                        
-                        <div>
-                            <i class="fas fa-truck"></i>
-                            <div class="detalle-productos">
-                                <p class="precios">$230.000</p>
-                                <p class="descuentos">20% OFF</p>
-                            </div>    
-                            <h5 class="descripcion">MacBook Pro 2019</h5></li>
-                            
-                        </div>
-                    </article> 
-                    <article>  
-                        <img src="./images/img-samsung-galaxy-s10.jpg"alt="cafetera">
-                        
-                        <div>
-                            <i class="fas fa-truck"></i>
-                            <div class="detalle-productos">
-                                <p class="precios">$70.500</p>
-                                <p class="descuentos">10% OFF</p>
-                            </div>    
-                            <h5 class="descripcion">Samsung Galaxy S10</h5></li>
-                            
-                        </div>
-                    </article>  
-                    <article>    
-                        <img src="./images/img-tv-samsung-smart.jpg" alt="cafetera">
-                        
-                        <div>
-                            <i class="fas fa-truck"></i>
-                            <div class="detalle-productos">
-                                <p class="precios">$23.200</p>
-                                <p class="descuentos">5% OFF</p>
-                            </div>   
-                             <h5 class="descripcion">SmartTv Samsung 43"</h5>
-                            
-                        </div>
-                    </article>
-                </div>   
-            </section>
-            <section>
-                <h2 class="titulares">Sección de Ofertas</h2>
-                <div class="productos">
-                    <article>
-                        <img src="./images/img-cafetera-moulinex.jpg"alt="cafetera">
-
-                        <div>  
-                            <i class="fas fa-truck"></i> 
-                            <div class="detalle-productos"> 
-                                <p class="precios">$6.770</p>
-                                <p class="descuentos">40% OFF</p>
-                            </div>    
-                            <h5 class="descripcion">Cafetera Moulinex</h5>
-                            
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./images/img-macbook-pro-2019.jpg"alt="cafetera">
-                        <div>
-                            <i class="fas fa-truck"></i>
-                            <div class="detalle-productos">
-                                <p class="precios">$230.000</p>
-                                <p class="descuentos">20% OFF</p>
-                            </div>    
-                            <h5 class="descripcion">MacBook Pro 2019</h5>
-                            
-                        </div>
-
-                    </article>
-                    <article>
-                        <img src="./images/img-samsung-galaxy-s10.jpg" alt="cafetera">
-                        <div>
-                            <i class="fas fa-truck"></i>
-                            <div class="detalle-productos">
-                                <p class="precios">$70.500</p>
-                                <p class="descuentos">10% OFF</p>
-                            </div>    
-                            <h5 class="descripcion">Samsung Galaxy S10</h5>
-                            
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./images/img-tv-samsung-smart.jpg"alt="cafetera">
-                        <div>
-                            <i class="fas fa-truck"></i>
-                            <div class="detalle-productos">
-                                <p class="precios">$23.200</p>
-                                <p class="descuentos">5% OFF</p>
-                            </div>    
-                            <h5 class="descripcion">SmartTv Samsung 43"</h5>
-                            
-                        </div>
-                    </article>
-                </div>
-            </section>
+    
         </main> 
         <footer class="footer-home">
+
+        
+                <iframe class="mapa-formosa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57293.53055967326!2d-58.204684883022956!3d-26.16915551041706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945ca5e488cf4f05%3A0xbcaebe65a1bae72!2sFormosa%2C%20Formosa%20Province!5e0!3m2!1sen!2sar!4v1684209516552!5m2!1sen!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             
-            <section class="footer">
-
-                <article>
-                    <div><i class="fas fa-credit-card"></i></div>
-                    <div>
-                        <h3>Pagá con tarjeta o en efectivo</h3>
-                        <p>Con Mercado Liebre Cash, tenés cuotas sin </p>
-                        <p>interés con tarjeta o efectivo en puntos de</p> 
-                        <p>pago. ¡Y siempre es seguro! </p>
-                    </div>
-                </article>    
-
-                <article>
-                    <div><i class="fas fa-gift"></i></div>
-                    <div>
-                        <h3>Envío gratis desde $ 2.500</h3>
-                        <p>Solo por estar registrad@ en Mercado Liebre</p> 
-                        <p>tenés envíos gratis en miles de productos. Es </p>
-                        <p>un beneficio de Mercado Puntos.</p>
-                    </div>
-                </article>
-            
-
-                <article>
-                    <div><i class="fas fa-user-shield"></i></div>
-                    <div>
-                        <h3>Seguridad, de principio a fin</h3>
-                        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre,</p>
-                        <p>no hay nada que no puedas hacer,porque</p> 
-                        <p>estás siempre protegid@.</p>
-                    </div>
-                </article>    
-
-            </section>
-                <div>Copyright © 1999-2020 MercadoLiebre S.R.L.</div>
             
         </footer>
 
