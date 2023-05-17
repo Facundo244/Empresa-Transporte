@@ -11,12 +11,11 @@
 header {
 
   background-color: grey;
-  height: 400px;
+  width: 100%;
+  
 }
-  
 
   
-
 
 
 
@@ -90,7 +89,25 @@ div.burger-menu{
   left: 1px;
 }
 
-.lista-1{
+.bar-btn{
+
+  font-size: 40px;
+  cursor: pointer;
+  position: relative;
+  top: -220px;
+  left: 170px;
+}
+
+#check{
+
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+  top: -220px;
+  left: 170px;
+}
+
+.nav-menu{
           
   display: flex;
   font-size: 1.3em;
@@ -99,9 +116,32 @@ div.burger-menu{
   list-style: none;
   color: #D4AF37;
   position: relative;
-  top: -200px;
   text-decoration: underline;
+  background: #15151c;
+  transition: all .5s;
+  height: 0px;
 
+}
+
+.nav-menu li {
+
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all .5s;
+}
+
+.nav-menu li a {
+
+  color: #D4AF37;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+
+  transition: .3s;
 }
 
 .quienes-somos{
@@ -111,6 +151,21 @@ div.burger-menu{
   justify-content: center;
   position: relative;
   
+}
+
+#check {
+
+  display: none;
+}
+
+#check:checked ~ .nav-menu{
+
+  height: 50vh;
+}
+
+#check:checked ~ .nav-menu li{
+
+  display: block;
 }
 
 
@@ -351,19 +406,7 @@ main i {
     left: 1px;
   }
 
-  .lista-1{
-          
-    display: flex;
-    font-size: 1.3em;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    color: #D4AF37;
-    position: relative;
-    top: -400px;
-    text-decoration: underline;
-  
-  }
+
 
   footer i {
     color: #D4AF37;
@@ -487,23 +530,8 @@ main i {
   
   }
   
- 
-  .lista-1{
-          
-    display: flex;
-    font-size: 1.3em;
-    flex-direction: row;
-    list-style: none;
-    color: #D4AF37;
-    position: relative;
-    text-decoration: underline;
-    justify-content: space-evenly;
-    top:-300px;
-    left: 700px;
-    width: 700px;
-    
-  
-  }
+
+
 
   .mapa-formosa{
 
@@ -524,15 +552,6 @@ main i {
     padding-left: 40px;
   }
 
-  @import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap');
-  *{
-
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Poppins' , sans-serif;
-
-  }
   
   .carrusel-celular{
 
@@ -543,6 +562,43 @@ main i {
   
     display: none;
   }
+
+  
+  .bar-btn{
+  
+    display: none;
+  }
+  
+  
+  .nav-menu li {
+  
+    display: flex;
+    position: relative;
+    top: -500px;
+    
+   
+  }
+
+
+  .nav-menu{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+
+  
+
+  
+  #check:checked ~ .nav-menu{
+  
+    display: none;
+  }
+  
+ 
+  
 
   
 
